@@ -8,7 +8,7 @@ import cookieParser from "cookie-parser";
 import asyncError from "./errors.middlewares";
 import indexRoutes from "../routes/index.routes";
 export default (app: Application) => {
-  app.use(morgan('dev'));
+  // app.use(morgan('dev'));
   app.use(cors());
   app.use(json());
   app.use(helmet());
