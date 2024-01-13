@@ -29,14 +29,13 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = require("express");
 const dotenv = __importStar(require("dotenv"));
 dotenv.config();
-const morgan_1 = __importDefault(require("morgan"));
 const cors_1 = __importDefault(require("cors"));
 const helmet_1 = __importDefault(require("helmet"));
 const cookie_parser_1 = __importDefault(require("cookie-parser"));
 const errors_middlewares_1 = __importDefault(require("./errors.middlewares"));
 const index_routes_1 = __importDefault(require("../routes/index.routes"));
 exports.default = (app) => {
-    app.use((0, morgan_1.default)('dev'));
+    // app.use(morgan('dev'));
     app.use((0, cors_1.default)());
     app.use((0, express_1.json)());
     app.use((0, helmet_1.default)());
