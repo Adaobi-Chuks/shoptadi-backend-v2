@@ -4,7 +4,6 @@ const router = Router();
 const {
     createUser,
     login
-    
 } = new UserController();
 
 //create a user or signup
